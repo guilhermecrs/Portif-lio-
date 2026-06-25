@@ -1,0 +1,155 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="/ICon_site_1.0.png">
+    <title>Portifólio</title>
+  </head>
+  <body>
+
+    <div class="wrap">
+    <div class="seigaiha-bg">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="sg" x="0" y="0" width="40" height="30" patternUnits="userSpaceOnUse">
+            <path d="M20 0 Q40 15 20 30 Q0 15 20 0Z" fill="none" stroke="#c0392b" stroke-width="0.7" opacity="0.13"/>
+            <path d="M0 15 Q20 0 40 15" fill="none" stroke="#c0392b" stroke-width="0.7" opacity="0.08"/>
+            <path d="M-20 15 Q0 0 20 15" fill="none" stroke="#c0392b" stroke-width="0.7" opacity="0.08"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="#28262e"/>
+        <rect width="100%" height="100%" fill="url(#sg)"/>
+        <rect width="100%" height="100%" fill="#28262e" opacity="0.72"/>
+      </svg>
+    </div>
+
+    <div class="bento">
+      <div class="card card-welcome">
+        <div class="corner tl"></div><div class="corner br"></div>
+        <div class="lbl">início</div>
+        <p class="w-name">Oi,<br>sou o <em>Guilherme.</em></p>
+        <div class="w-rule"></div>
+        <p class="w-desc">Crio soluções que misturam<br>código e design — do pixel ao deploy.</p>
+        <div class="badge">
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <span>Dev + Designer</span>
+        </div>
+      </div>
+
+      <div class="card card-status">
+        <div class="corner tl"></div><div class="corner br"></div>
+        <div class="lbl">status</div>
+        <p class="s-title">Disponível para freelas</p>
+        <p class="s-sub">// aberto a projetos</p>
+        <div class="alive">
+          <div class="dot"></div>
+          <span>online · ativo</span>
+        </div>
+        <div class="div"></div>
+        <div class="coffee">
+          <i class="fa fa-coffee" aria-hidden="true"></i>
+          movido a Capuccino
+        </div>
+      </div>
+      
+        <div class="card card-music" id="musicCard">
+          <audio id="meuAudio" src="/YTDown_YouTube_yung-lixo-tomodachi-ft-SHO-SENSEI-prod-b_Media_0Ey3AWqAem4_009_128k.mp3"></audio>
+        
+          <div class="lbl">ouvindo agora</div>
+          <div class="music-row">
+          
+          <div class="mc" id="playPauseBtn" style="cursor: pointer;">
+            <i class="fa fa-play" aria-hidden="true" id="playIcon"></i>
+          </div>
+          
+          <div class="mi">
+            <p class="mt">Yung Lixo - Tomodachi ft. SHO-SENSEI!!</p>
+            <p class="ma">Hip Hop Radio • beats to code/relax to</p>
+            <div class="prog">
+              <span class="pt" id="currentTime">0:00</span>
+              
+              <div class="pb" id="progressBar" style="cursor: pointer; padding: 1.5px 0; margin-top: 1px;">
+                <div class="pf" id="progressFill" style="width: 0%;"></div>
+              </div>
+              
+              <span class="pt" id="totalDuration">0:00</span>
+            </div>
+          </div>
+          
+          <div class="bars paused">
+            <div class="b"></div><div class="b"></div><div class="b"></div>
+            <div class="b"></div><div class="b"></div>
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="card card-project">
+        <div class="pt-top">
+          <div class="pbadge">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            destaque
+          </div>
+          <p class="ptitle">Projetos<br>Formula Rokkie</p>
+          <p class="pdesc">Este site foi criado com o intuito de ensinar e apresentar o mundo da formula 1 para novos fãs e veteranos.</p>
+        </div>
+        <div class="pt-bot">
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="meu-botao">
+            <a href="https://guilhermecrs.github.io/Formula-Rokkie/" class="meu-botao">
+              ver como resolvi
+            </a>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-arsenal">
+        <div class="corner tl"></div><div class="corner br"></div>
+        <div class="lbl">arsenal</div>
+        <p class="ah">Meu toolkit</p>
+        <div class="tgrid">
+          <div class="ti"><i class="fas fa-code" aria-hidden="true"></i><span class="tn">React</span></div>
+          <div class="ti"><i class="fas fa-pen-nib" aria-hidden="true"></i><span class="tn">Figma</span></div>
+          <div class="ti"><i class="fab fa-js-square" aria-hidden="true"></i><span class="tn">JS</span></div>
+          <div class="ti"><i class="fab fa-python" aria-hidden="true"></i><span class="tn">Python</span></div>
+          <div class="ti"><i class="fa fa-database" aria-hidden="true"></i><span class="tn">SQL</span></div>
+          <div class="ti"><i class="fab fa-css3-alt" aria-hidden="true"></i><span class="tn">CSS</span></div> 
+          <!--Estava com problemas ao importar os icónes da biblioteca, tive que alterar todas as tags-->
+        </div>
+      </div>
+
+      <div class="card card-contact">
+        <div class="corner tl"></div><div class="corner br"></div>
+        <div class="lbl">contato</div>
+        <p class="ch">Bora construir<br>algo juntos?</p>
+        <div class="cbtns">
+          <a href="https://wa.me/+5516993604142" class="cbtn c-wpp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            WhatsApp
+          </a>
+          <a href="https://www.linkedin.com/in/guilherme-c%C3%A9sar-460491204/?skipRedirect=true" class="cbtn c-li">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            LinkedIn
+          </a>
+          <a href="https://guilhermecrs163@gmail.com" class="cbtn c-email" target="_blank">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            guilhermecrs163@gmail.com
+          </a>
+          <a href="/Currículo_2026_atualizado2.0.pdf" class="cbtn c-cv">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+            baixar currículo
+          </a>
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
+
